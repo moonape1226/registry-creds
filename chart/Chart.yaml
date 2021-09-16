@@ -1,0 +1,9 @@
+apiVersion: v2
+name: registry-creds
+description: A Helm chart for creating image pull secret for dockerhub (https://github.com/alexellis/registry-creds)
+
+type: application
+
+version: 0.1.0
+
+appVersion: 0.2.5
