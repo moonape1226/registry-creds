@@ -1,4 +1,2 @@
 # Set to true for GPG signing
 sign: false
-package-path: charts
-index-path: charts
