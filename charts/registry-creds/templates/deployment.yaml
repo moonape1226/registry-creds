@@ -12,11 +12,11 @@ spec:
       app: {{ include "registry-creds.fullname" . }}
   template:
     metadata:
-      checksum/config: {{ include (print $.Template.BasePath "/secret.yaml") . | sha256sum }}
-      {{- with .Values.podAnnotations }}
       annotations:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
+        checksum/config: {{ include (print $.Template.BasePath "/secret.yaml") . | sha256sum }}
+        {{- with .Values.podAnnotations }}
+          {{- toYaml . | nindent 8 }}
+        {{- end }}
       labels:
         app: {{ include "registry-creds.fullname" . }}
     spec:
