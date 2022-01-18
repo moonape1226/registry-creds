@@ -14,11 +14,11 @@ cluster. The resources are derived from it's [menifest.yaml](https://github.com/
 
 **Note.**
 
-This helm chart will create `registry-creds-secret` secret resource from docker authentication information provided in `values.yaml`. 
+This helm chart will create `registry-creds-secret` secret resource from docker authentication information provided in `values.yaml`.
 
-Secret `registry-creds-secret` will be copied to all K8S namespaces with name `docker-registry-registrycreds`. This application will also update the `ImagePullSecrets` config in default serviceaccount for all namespace to use `docker-registry-registrycreds`.
+Secret `registry-creds-secret` will be copied to all K8S namespaces with name `docker-registry`. This application will also update the `ImagePullSecrets` config in default serviceaccount for all namespace to use `docker-registry`.
 
-Deleting helm release will delete `registry-creds-secret` as well as all `docker-registry-registrycreds` secrets, but it won't affect pulling image if you are not using private images.
+Deleting helm release will delete `registry-creds-secret` as well as all `docker-registry` secrets, but it won't affect pulling image if you are not using private images.
 
 ## Installation
 
