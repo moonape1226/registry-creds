@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   registry-creds:
   - apiVersion: v2
+    appVersion: 0.3.2-rc1
+    created: "2023-04-26T09:05:35.852615849Z"
+    description: A Helm chart for creating image pull secret for dockerhub (https://github.com/alexellis/registry-creds)
+    digest: 7d479377c09d7bbf728d64d94786f023221b2ff9c8e94c29d38e5648ddb98707
+    name: registry-creds
+    type: application
+    urls:
+    - https://github.com/moonape1226/registry-creds/releases/download/registry-creds-0.2.0/registry-creds-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.3.1
     created: "2021-12-26T12:50:30.047454758Z"
     description: A Helm chart for creating image pull secret for dockerhub (https://github.com/alexellis/registry-creds)
